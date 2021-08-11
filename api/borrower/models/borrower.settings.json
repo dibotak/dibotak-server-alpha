@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "borrowers",
+  "info": {
+    "name": "Borrower",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "book": {
+      "model": "book"
+    }
+  }
+}

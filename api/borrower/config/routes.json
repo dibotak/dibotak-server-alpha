@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/borrowers",
+      "handler": "borrower.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/borrowers/count",
+      "handler": "borrower.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/borrowers/:id",
+      "handler": "borrower.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/borrowers",
+      "handler": "borrower.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/borrowers/:id",
+      "handler": "borrower.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/borrowers/:id",
+      "handler": "borrower.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
